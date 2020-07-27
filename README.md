@@ -1,15 +1,17 @@
 # GoRAT
 Remote Access Tool written in Golang (client) and PHP (server).
 
-### Disclaimer
-This tool was made for educational purposes only.
-I am not responsible nor condone anyone using this tool for malicious purposes.
-This program should be only ran on computers you own or have permissions to pentest.
+### Disclaimer (READ BEFORE CONTINUING)
+This tool was made for educational/research purposes only. The author **IS NOT** responsible nor liable for how you use anything provided here. The author and/or anyone affiliated with the project **WILL NOT** be responsible nor liable for any losses or damages caused by this tool. By using GoRAT **YOU** and only you, have full responsibility for **ANYTHING** you cause. By using or downloading **GoRAT** you automatically **AGREE TO USE GoRAT AT YOUR OWN RISK**. **GoRAT** is **ONLY INTENDED** to be used on **YOUR OWN** pentesting machines/labs or with **EXPLICIT** consent from the owner of the property being pentested.
+With this disclaimer, the author and/or anyone affiliated with **GoRAT** is **FULLY** exempt from anything you or somebody can cause with it.
 
 ### Features
 * Retrieving computer public IP
 * Retrieving machine name and username
-* Sending that data to Discord via webhooks
+* Downloading files (client-side) - **NEW** releasing in next version (v1.1.0)
+* Downloading and opening files (client-side) - **NEW** releasing in next version (v1.1.0)
+* Uploading files from client to server - **NEW** releasing in next version (v1.1.0)
+* Taking screenshots (on client's machine) - **NEW** releasing in next version (v1.1.0)
 
 ### Installation
 ###### Server installation | Changing to JavaScript most-likely
