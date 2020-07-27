@@ -1,4 +1,4 @@
-# GoRAT
+# GoRAT v1.0.0
 Remote Access Tool written in Golang (client) and PHP (server).
 
 ### Disclaimer (READ BEFORE CONTINUING)
@@ -9,10 +9,6 @@ With this disclaimer, the author and/or anyone affiliated with **GoRAT** is **FU
 * Retrieving computer public IP
 * Retrieving machine name and username
 * **NEW** Executable persistency (using regedit)
-* **NEW** Downloading files (client-side) - (Releasing in v1.1.0)
-* **NEW** Downloading and opening files (client-side) - (Releasing in v1.1.0)
-* **NEW** Uploading files from client to server - (Releasing in v1.1.0)
-* **NEW** Taking screenshots (on client's machine) - (Releasing in v1.1.0)
 
 ### Installation
 ###### Server installation | Changing to JavaScript most-likely
