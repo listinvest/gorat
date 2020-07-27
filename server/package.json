@@ -1,0 +1,26 @@
+{
+  "name": "gorat",
+  "version": "1.0.0",
+  "description": "Remote Access Tool using Golang (client) and JavaScript (server)",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinopai/gorat.git"
+  },
+  "author": "Tino Pai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tinopai/gorat/issues"
+  },
+  "homepage": "https://github.com/tinopai/gorat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "websocket": "^1.0.31",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {}
+}

