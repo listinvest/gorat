@@ -12,11 +12,14 @@ With this disclaimer, the author and/or anyone affiliated with **GoRAT** is **FU
 * **NEW** Downloading files (client-side)
 * **NEW** Downloading and opening files (client-side) 
 * **NEW** Uploading files from client to server
+* **NEW** Manually broadcast to every client by sending commands from web (default port: 9899)
 
 ### Installation
 ###### Server installation
-1. Install PHP ([Ubuntu 18.04](https://linuxize.com/post/how-to-install-php-on-ubuntu-18-04/), [Windows 10 (XAMPP)](https://www.apachefriends.org/download.html))
-2. Go to your server's htdocs and place [server.php](https://github.com/tinopai/gorat/blob/master/server/server.php) there
+1. Install [Node.js](https://nodejs.org/en/)
+2. `cd gorat\server`
+3. `npm i`
+4. `node server.js` (use forever or nodemon)
 ###### Client installation
 1. Install [Golang](https://golang.org/doc/install)
 2. `cd gorat\client`
