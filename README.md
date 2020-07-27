@@ -8,10 +8,11 @@ With this disclaimer, the author and/or anyone affiliated with **GoRAT** is **FU
 ### Features
 * Retrieving computer public IP
 * Retrieving machine name and username
-* Downloading files (client-side) - **NEW** releasing in next version (v1.1.0)
-* Downloading and opening files (client-side) - **NEW** releasing in next version (v1.1.0)
-* Uploading files from client to server - **NEW** releasing in next version (v1.1.0)
-* Taking screenshots (on client's machine) - **NEW** releasing in next version (v1.1.0)
+* **NEW** Executable persistency (using regedit)
+* **NEW** Downloading files (client-side) - (Releasing in v1.1.0)
+* **NEW** Downloading and opening files (client-side) - (Releasing in v1.1.0)
+* **NEW** Uploading files from client to server - (Releasing in v1.1.0)
+* **NEW** Taking screenshots (on client's machine) - (Releasing in v1.1.0)
 
 ### Installation
 ###### Server installation | Changing to JavaScript most-likely
@@ -19,5 +20,5 @@ With this disclaimer, the author and/or anyone affiliated with **GoRAT** is **FU
 2. Go to your server's htdocs and place [server.php](https://github.com/tinopai/gorat/blob/master/server/server.php) there
 ###### Client installation
 1. Install [Golang](https://golang.org/doc/install)
-2. `cd` to where GoRAT is located
-3. Build the application by running `go build app.go`
+2. `cd gorat\client`
+3. `go build app.go`
