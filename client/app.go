@@ -169,16 +169,6 @@ func main() {
 			message := fmt.Sprintf("%s", messageb)
 			/*
 
-				RFS: Screenshot the whole screen
-
-			*/
-			if strings.Contains(message, "NodeServer::Message[<&>]RFS::Screenshot") && (strings.Contains(message, "ip:"+string(ip)) || strings.Contains(message, "ip:all")) {
-				fmt.Println("Screenshot")
-				//img, err := screenshot.CaptureScreen() // *image.RGBA
-				//myImg := png.Encode(, img)
-			}
-			/*
-
 				RFS: Download-Open File from internet
 
 			*/
